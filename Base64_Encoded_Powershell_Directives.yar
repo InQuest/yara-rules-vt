@@ -8,7 +8,7 @@ rule Base64_Encoded_Powershell_Directives
         Blog_Reference = "https://inquest.net/blog/2019/07/19/base64-encoded-powershell-pivots"
         Labs_Reference = "https://labs.inquest.net/dfi/sha256/3b8235b67c4b67ea782b49388c5166786fb9d7a5b5096150b1c10e53f1d01738"
         Samples = "https://github.com/InQuest/malware-samples/tree/master/2019-07-Base64-Encoded-Powershell-Directives"
-	strings:
+    strings:
         // Copy-Item
         $enc01 = /(Q\x32\x39weS\x31JdGVt[\x2b\x2f-\x39A-Za-z]|[\x2b\x2f-\x39A-Za-z][\x2b\x2f-\x39A-Za-z][\x31\x35\x39BFJNRVZdhlptx]Db\x33B\x35LUl\x30ZW[\x30-\x33]|[\x2b\x2f-\x39A-Za-z][\x30EUk]NvcHktSXRlb[Q-Za-f])/
 
