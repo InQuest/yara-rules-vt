@@ -3,8 +3,8 @@ rule Base64_Encoded_Powershell_Directives
     meta:
         author         = "InQuest Labs"
         description    = "This signature detects base64 encoded Powershell directives."
-        created_date   = "2019-04-29"
-        updated_date   = "2021-05-19"
+        created_date   = "2022-03-15"
+        updated_date   = "2022-03-15"
         blog_reference = "https://inquest.net/blog/2019/07/19/base64-encoded-powershell-pivots"
         labs_reference = "https://labs.inquest.net/dfi/sha256/3b8235b67c4b67ea782b49388c5166786fb9d7a5b5096150b1c10e53f1d01738"
         labs_pivot     = "https://labs.inquest.net/dfi/search/alert/Base64%20Encoded%20Powershell%20Directives"
