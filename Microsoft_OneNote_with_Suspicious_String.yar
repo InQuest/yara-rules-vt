@@ -2,7 +2,7 @@ rule Microsoft_OneNote_with_Suspicious_String
 {
     meta:
         author         = "InQuest Labs"
-        description    = "This signature detects an Microsoft OneNote files containing suspicious strings."
+        description    = "This signature detects Microsoft OneNote files containing suspicious strings."
         created_date   = "2023-02-24"
         updated_date   = "2023-02-24"
         blog_reference = "N/A"
