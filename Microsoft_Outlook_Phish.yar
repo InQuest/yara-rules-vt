@@ -7,7 +7,7 @@ rule Microsoft_Outlook_Phish
         updated_date   = "2023-02-27"
         samples        = "09713976f2b6bf0b0cba3e10505293e313781c6b896fe0f772ea10ad83bf8435"
 
-	strings:
+    strings:
         $ole_marker      = /^\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1/
         $phish_marker_00 = "eval(atob(atob("
 
@@ -21,6 +21,6 @@ rule Microsoft_Outlook_Phish
         /* [pP]rovide [pP]assword */
         $phish_marker_03 = /([Uc]HJvdmlkZSB[Qw]YXNzd29yZ[A-P]|[\x2b\x2f-9A-Za-z][13FHVXln]Byb3ZpZGUg[Uc]GFzc3dvcm[Q-T]|[\x2b\x2f-9A-Za-z]{2}[159BFJNRVZdhlptx][Qw]cm92aWRlI[FH]Bhc3N3b3Jk)/
 
-	condition:
-		$ole_marker at 0 and any of ($phish_marker_*) and file_type contains "outlook"
+    condition:
+        $ole_marker at 0 and any of ($phish_marker_*) and file_type contains "outlook"
 }
