@@ -5,10 +5,10 @@ rule Microsoft_OneNote_with_Suspicious_String
         description    = "This signature detects Microsoft OneNote files containing suspicious strings."
         created_date   = "2023-02-24"
         updated_date   = "2023-02-24"
-        blog_reference = "N/A"
+        blog_reference = "https://inquest.net/blog/2023/02/27/youve-got-malware-rise-threat-actors-using-microsoft-onenote-malicious-campaigns"
         labs_reference = "N/A"
         labs_pivot     = "N/A"
-        samples        = "73dc35d1fa8d1e3147a5fe6056e01f89847441ec46175ba60b24a56b7fbdf2f9"
+        samples        = "660870c3f3e8ff105e5cc06b3b3d04436118fc67533c93d0df56bde359e335d0"
 
     strings:
         $suspicious_00 = "<script" nocase ascii wide
