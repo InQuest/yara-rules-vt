@@ -8,7 +8,7 @@ rule Microsoft_Outlook_Phish
         samples        = "09713976f2b6bf0b0cba3e10505293e313781c6b896fe0f772ea10ad83bf8435"
 
 	strings:
-		$ole_marker      = /^\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1/
+        $ole_marker      = /^\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1/
         $phish_marker_00 = "eval(atob(atob("
 
         /* Generated via https://labs.inquest.net/tools/yara/b64-regexp-generator */
